@@ -1,0 +1,268 @@
+var herolist={
+		"hero":[{
+			"name":"未知英雄",
+			"percent":8,
+			"img":"img/hero-img/unknown.png",
+			"discount":[{
+				"img":"img/unknown.png",
+				},
+				{
+					"img":"img/unknown.png",
+				}]
+		},
+		{
+			"name":"无极剑圣 易",
+			"percent":8,
+			"img":"img/hero-img/MasterYi.png",
+			"discount":[{
+				"img":"https://ossweb-img.qq.com/images/lol/appskin/11000.jpg",
+				"name":"无极剑圣 易",
+				"originalPrice":"10.00",
+				"nowPrice":"3.50"
+			},
+			{
+				"img":"img/Kennen.png",
+				"name":"恶魔之刃 泰达米尔",
+				"originalPrice":"99.00",
+				"nowPrice":"??"
+			}]			
+		},
+		{
+			"name":"德玛西亚之力 盖伦",
+			"percent":8,
+			"img":"img/hero-img/Garen.png",
+			"discount":[{
+				"img":"img/Kennen.png",
+				"name":"恶魔之刃 泰达米尔",
+				"originalPrice":"99.00",
+				"nowPrice":"??"
+			},
+			{
+				"img":"img/Kennen.png",
+				"name":"恶魔之刃 泰达米尔",
+				"originalPrice":"99.00",
+				"nowPrice":"??"
+			}]			
+		},
+		{
+			"name":"皮城女警  凯特琳",
+			"percent":8,
+			"img":"img/hero-img/Caitlyn.png",
+			"discount":[{
+				"img":"img/Kennen.png",
+				"name":"恶魔之刃 泰达米尔",
+				"originalPrice":"99.00",
+				"nowPrice":"??"
+			},
+			{
+				"img":"img/Kennen.png",
+				"name":"恶魔之刃 泰达米尔",
+				"originalPrice":"99.00",
+				"nowPrice":"??"
+			}]			
+		},
+		{
+			"name":"盲僧  李青",
+			"percent":8,
+			"img":"img/hero-img/LeeSin.png",
+			"discount":[{
+				"img":"img/Kennen.png",
+				"name":"恶魔之刃 泰达米尔",
+				"originalPrice":"99.00",
+				"nowPrice":"??"
+			},
+			{
+				"img":"img/Kennen.png",
+				"name":"恶魔之刃 泰达米尔",
+				"originalPrice":"99.00",
+				"nowPrice":"??"
+			}]			
+		},
+		{
+			"name":"齐天大圣  孙悟空",
+			"percent":8,
+			"img":"img/hero-img/MonkeyKing.png",
+			"discount":[{
+				"img":"img/Kennen.png",
+				"name":"恶魔之刃 泰达米尔",
+				"originalPrice":"99.00",
+				"nowPrice":"??"
+			},
+			{
+				"img":"img/Kennen.png",
+				"name":"恶魔之刃 泰达米尔",
+				"originalPrice":"99.00",
+				"nowPrice":"??"
+			}]			
+		},
+		{
+			"name":"蛮族之王  泰达米尔",
+			"percent":8,
+			"img":"img/hero-img/Tryndamere.png",
+			"discount":[{
+				"img":"img/Kennen.png",
+				"name":"恶魔之刃 泰达米尔",
+				"originalPrice":"99.00",
+				"nowPrice":"??"
+			},
+			{
+				"img":"img/Kennen.png",
+				"name":"恶魔之刃 泰达米尔",
+				"originalPrice":"99.00",
+				"nowPrice":"??"
+			}]			
+		},
+		{
+			"name":"无极剑圣 易",
+			"percent":8,
+			"img":"img/hero-img/Teemo.png",
+			"discount":[{
+				"img":"img/Kennen.png",
+				"name":"恶魔之刃 泰达米尔",
+				"originalPrice":"99.00",
+				"nowPrice":"??"
+			},
+			{
+				"img":"img/Kennen.png",
+				"name":"恶魔之刃 泰达米尔",
+				"originalPrice":"99.00",
+				"nowPrice":"??"
+			}]			
+		},
+		{
+			"name":"迅捷斥候  提莫",
+			"percent":8,
+			"img":"img/hero-img/Jax.png",
+			"discount":[{
+				"img":"img/Kennen.png",
+				"name":"恶魔之刃 泰达米尔",
+				"originalPrice":"99.00",
+				"nowPrice":"??"
+			},
+			{
+				"img":"img/Kennen.png",
+				"name":"恶魔之刃 泰达米尔",
+				"originalPrice":"99.00",
+				"nowPrice":"??"
+			}]			
+		},
+		{
+			"name":"德邦总管  赵信",
+			"percent":8,
+			"img":"img/hero-img/XinZhao.png",
+			"discount":[{
+				"img":"img/Kennen.png",
+				"name":"恶魔之刃 泰达米尔",
+				"originalPrice":"99.00",
+				"nowPrice":"??"
+			},
+			{
+				"img":"img/Kennen.png",
+				"name":"恶魔之刃 泰达米尔",
+				"originalPrice":"99.00",
+				"nowPrice":"??"
+			}]			
+		},
+		{
+			"name":"光辉女郎  拉克丝",
+			"percent":8,
+			"img":"img/hero-img/Lux.png",
+			"discount":[{
+				"img":"img/Kennen.png",
+				"name":"恶魔之刃 泰达米尔",
+				"originalPrice":"99.00",
+				"nowPrice":"??"
+			},
+			{
+				"img":"img/Kennen.png",
+				"name":"恶魔之刃 泰达米尔",
+				"originalPrice":"99.00",
+				"nowPrice":"??"
+			}]			
+		},
+		{
+			"name":"暗夜猎手  薇恩",
+			"percent":8,
+			"img":"img/hero-img/Vayne.png",
+			"discount":[{
+				"img":"img/Kennen.png",
+				"name":"恶魔之刃 泰达米尔",
+				"originalPrice":"99.00",
+				"nowPrice":"??"
+			},
+			{
+				"img":"img/Kennen.png",
+				"name":"恶魔之刃 泰达米尔",
+				"originalPrice":"99.00",
+				"nowPrice":"??"
+			}]			
+		},
+		{
+			"name":"德玛西亚皇子  嘉文四世",
+			"percent":8,
+			"img":"img/hero-img/JarvanIV.png",
+			"discount":[{
+				"img":"img/Kennen.png",
+				"name":"恶魔之刃 泰达米尔",
+				"originalPrice":"99.00",
+				"nowPrice":"??"
+			},
+			{
+				"img":"img/Kennen.png",
+				"name":"恶魔之刃 泰达米尔",
+				"originalPrice":"99.00",
+				"nowPrice":"??"
+			}]			
+		},
+		{
+			"name":"战争之王 潘森",
+			"percent":8,
+			"img":"img/hero-img/Pantheon.png",
+			"discount":[{
+				"img":"img/Kennen.png",
+				"name":"恶魔之刃 泰达米尔",
+				"originalPrice":"99.00",
+				"nowPrice":"??"
+			},
+			{
+				"img":"img/Kennen.png",
+				"name":"恶魔之刃 泰达米尔",
+				"originalPrice":"99.00",
+				"nowPrice":"??"
+			}]			
+		},
+		{
+			"name":"诺克萨斯之手 德莱厄斯",
+			"percent":8,
+			"img":"img/hero-img/Darius.png",
+			"discount":[{
+				"img":"img/Kennen.png",
+				"name":"恶魔之刃 泰达米尔",
+				"originalPrice":"99.00",
+				"nowPrice":"??"
+			},
+			{
+				"img":"img/Kennen.png",
+				"name":"恶魔之刃 泰达米尔",
+				"originalPrice":"99.00",
+				"nowPrice":"??"
+			}]			
+		},
+		{
+			"name":"大发明家  黑默丁格",
+			"percent":8,
+			"img":"img/hero-img/Heimerdinger.png",
+			"discount":[{
+				"img":"img/Kennen.png",
+				"name":"恶魔之刃 泰达米尔",
+				"originalPrice":"99.00",
+				"nowPrice":"??"
+			},
+			{
+				"img":"img/Kennen.png",
+				"name":"恶魔之刃 泰达米尔",
+				"originalPrice":"99.00",
+				"nowPrice":"??"
+			}]			
+		}]	
+	}

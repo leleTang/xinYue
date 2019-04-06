@@ -1,0 +1,17 @@
+.activity {
+  width: 100%;
+  padding: 1.625em 2.187em;
+}
+.activity .list {
+  display: flex;
+}
+.activity .list li .img-frame {
+  width: 5em;
+  height: 5em;
+}
+.activity .list li .img-frame img {
+  background-color: #4297ff;
+}
+.activity .list li .title {
+  font-size: 1.5em;
+}
