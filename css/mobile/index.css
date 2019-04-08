@@ -1,17 +1,65 @@
-.activity {
-  width: 100%;
-  padding: 1.625em 2.187em;
+body {
+  background: #eef1f8;
+  color: #868f9c;
 }
-.activity .list {
+body .activity {
+  background: #ffffff;
+  padding: 2.08rem 2.91rem;
+}
+body .activity .list {
   display: flex;
 }
-.activity .list li .img-frame {
-  width: 5em;
-  height: 5em;
+body .activity .list li {
+  margin-left: 6.66rem;
 }
-.activity .list li .img-frame img {
+body .activity .list li:nth-child(1) {
+  margin-left: 0;
+}
+body .activity .list li .img-frame {
+  width: 6.66rem;
+  height: 6.66rem;
   background-color: #4297ff;
+  display: flex;
+  align-items: center;
+  border-radius: 1rem;
+  justify-content: center;
+  margin: 0 auto;
 }
-.activity .list li .title {
-  font-size: 1.5em;
+body .activity .list li .img-frame img {
+  width: 2.66rem;
+}
+body .activity .list li .title {
+  font-size: 2rem;
+  margin-top: 0.83rem;
+}
+body .hot-block,
+body .new-activity {
+  margin-top: 0.83rem;
+  background: #ffffff;
+  padding: 1.83rem 2.91rem;
+}
+body .new-activity .activity-picture .activity-picture-list {
+  display: flex;
+}
+body .new-activity .activity-picture .activity-picture-list li:nth-child(2n) {
+  margin-left: 2.91rem;
+}
+body .new-activity .activity-picture .activity-picture-list li img {
+  width: 26.16rem;
+  height: 17rem;
+}
+body .block-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.91rem;
+}
+body .block-header .block-icon {
+  display: block;
+  width: 1.83rem;
+  height: 2rem;
+  object-fit: contain;
+}
+body .block-header .block-title {
+  font-size: 2rem;
+  margin-left: 1.33rem;
 }
