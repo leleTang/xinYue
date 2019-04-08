@@ -4,22 +4,34 @@
 	<head>
 		<title>阿卡丽的神秘商店</title>
 		<meta charset="utf-8">
+		<!--<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">-->
 		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
 		<meta content="yes" name="apple-touch-fullscreen">
 		<meta content="telephone=no" name="format-detection">
-		<meta content="black" name="apple-mobile-web-app-status-bar-style">
-		<meta property="wb:webmaster" content="c51923015ca19eb1">
-		<meta name="author" content="m.taobao.com">
-		<meta name="copyright" content="Copyright ©m.taobao.com 版权所有">
-		<meta name="revisit-after" content="1 days">
-		<meta name="keywords" content="">
-		<meta name="description" content="">
+		<meta name="author" content="TangCiLe">
 		<link rel="stylesheet" href="css/common/reset.css" />
+		<link rel="stylesheet" href="tools/swiper/css/swiper.min.css" />
 		<link rel="stylesheet" href="css/mobile/index.css" />
 	</head>
 
 	<body>
 		<div class="banner">
+			<div class="swiper-container js-banner-swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img class="banner-img" src="img/banner/mobile-banner01.png" />
+					</div>
+					<div class="swiper-slide">
+						<img class="banner-img" src="img/banner/mobile-banner02.png" />
+					</div>
+					<div class="swiper-slide">
+						<img class="banner-img" src="img/banner/mobile-banner03.png" />
+					</div>
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
+			</div>
 		</div>
 		<div class="activity">
 			<ul class="list">
@@ -54,6 +66,36 @@
 				<img class="block-icon" src="img/mobile-icon/hot.png"></img>
 				<span class="block-title">热门专区</span>
 			</div>
+			<div class="swiper-container js-hot-swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img class="hot-img" src="img/mobile-icon/hot01.png" />
+					</div>
+					<div class="swiper-slide">
+						<img class="hot-img" src="img/mobile-icon/hot02.png" />
+					</div>
+					<div class="swiper-slide">
+						<img class="hot-img" src="img/mobile-icon/hot03.png" />
+					</div>
+					<div class="swiper-slide">
+						<img class="hot-img" src="img/mobile-icon/hot04.png" />
+					</div>
+					<div class="swiper-slide">
+						<img class="hot-img" src="img/mobile-icon/hot01.png" />
+					</div>
+					<div class="swiper-slide">
+						<img class="hot-img" src="img/mobile-icon/hot02.png" />
+					</div>
+					<div class="swiper-slide">
+						<img class="hot-img" src="img/mobile-icon/hot03.png" />
+					</div>
+					<div class="swiper-slide">
+						<img class="hot-img" src="img/mobile-icon/hot04.png" />
+					</div>
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
+			</div>
 		</div>
 		<div class="new-activity">
 			<div class="block-header">
@@ -68,6 +110,7 @@
 			</div>
 		</div>
 		<script type="text/javascript" src="js/common/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="tools/swiper/js/swiper.min.js"></script>
 		<script type="text/javascript" src="js/index.mobile.js"></script>
 	</body>
 

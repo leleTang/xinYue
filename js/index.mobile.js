@@ -5,6 +5,10 @@ $(document).ready(function() {
 	index.component.ifPC();
 	//判断手机横竖屏状态
 	index.component.orientation();
+	//使用swiper插件
+	index.component.bannerSwiper();
+	
+	index.component.hotSwiper();
 })
 //页面初始化结束
 function createIndexTemplate() {
@@ -49,12 +53,45 @@ function createIndexTemplate() {
 		return mobile_flag;
 	}
 	//判断手机横竖屏状态
-	templateObj.component.orientation=function(){
-		window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", function() {  
-            if (window.orientation === 90 || window.orientation === -90 ){   
-                alert('横屏状态！');  
-            }    
-        }, false);   
+	templateObj.component.orientation = function() {
+		window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", function() {
+			if(window.orientation === 90 || window.orientation === -90) {
+				alert('横屏状态！');
+			}
+		}, false);
+	}
+	//使用swiper插件
+	templateObj.component.bannerSwiper = function() {
+		var swiper = new Swiper('.js-banner-swiper', {
+			spaceBetween: 30,
+			centeredSlides: true,
+			loop: true,
+			autoplay: {
+				delay: 2500,
+				disableOnInteraction: false,
+			},
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			}
+		});
+	}
+	templateObj.component.hotSwiper = function() {
+		var swiper = new Swiper('.js-hot-swiper', {
+			slidesPerView: 4,
+			spaceBetween: 30,
+			slidesPerGroup: 4,
+			loop: true,
+			loopFillGroupWithBlank: true,
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		});
 	}
 	return templateObj;
 }

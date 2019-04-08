@@ -1,16 +1,32 @@
 @white: #ffffff;
 @bg-color: #eef1f8;
-@color:#868f9c;
+@color: #868f9c;
+@banner-color: #dce1eb;
+@banner-select-color: #4297ff;
 body {
     background: @bg-color;
     color: @color;
-    .activity{
-        background: @white;
-        padding: 2.08rem 2.91rem;
+    font-size: 62.5%;
+    .banner {
+        //      height: 22rem;
+        width: 100%;
+        .swiper-container {
+            height: 22rem;
+            .swiper-wrapper {
+                .swiper-slide {
+                    .banner-img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
     }
     .activity {
         .list {
             display: flex;
+            background: @white;
+            padding: 2rem 3rem;
             li {
                 margin-left: 6.66rem;
                 &:nth-child(1) {
@@ -31,28 +47,38 @@ body {
                 }
                 .title {
                     font-size: 2rem;
-                    margin-top: 0.83rem;
+                    margin-top: 1rem;
                 }
             }
         }
     }
-    .hot-block,.new-activity{
-        margin-top: 0.83rem;
+    .hot-block,
+    .new-activity {
+        margin-top: 1rem;
         background: @white;
-        padding: 1.83rem 2.91rem;
+        padding: 2.2rem 3rem;
     }
-    .hot-block{
-        
+    .hot-block {
+        .swiper-container {
+//          height: 22rem;
+            .swiper-wrapper {
+                .swiper-slide {
+                    .hot-img {
+                        width: 13rem;
+                    }
+                }
+            }
+        }
     }
-    .new-activity{
-        .activity-picture{
-            .activity-picture-list{
+    .new-activity {
+        .activity-picture {
+            .activity-picture-list {
                 display: flex;
-                li{
-                    &:nth-child(2n){
+                li {
+                    &:nth-child(2n) {
                         margin-left: 2.91rem;
                     }
-                    img{
+                    img {
                         width: 26.16rem;
                         height: 17rem;
                     }
@@ -61,19 +87,32 @@ body {
         }
     }
     //  通用标题头部
-    .block-header{
+    .block-header {
         display: flex;
         align-items: center;
         margin-bottom: 2.91rem;
-        .block-icon{
+        .block-icon {
             display: block;
             width: 1.83rem;
             height: 2rem;
             object-fit: contain;
         }
-        .block-title{
+        .block-title {
             font-size: 2rem;
             margin-left: 1.33rem;
         }
+    }
+}
+
+.swiper-container {
+    .swiper-pagination-bullet {
+        width: 2rem;
+        height: 1rem;
+        border-radius: 20px;
+        background: @banner-color;
+        opacity: inherit;
+    }
+    .swiper-pagination-bullet-active {
+        background: @banner-select-color;
     }
 }
