@@ -47,8 +47,16 @@ body .new-activity {
   background: #ffffff;
   padding: 2.2rem 3rem;
 }
+body .hot-block .swiper-container {
+  height: 20rem;
+}
 body .hot-block .swiper-container .swiper-wrapper .swiper-slide .hot-img {
   width: 13rem;
+}
+body .hot-block .swiper-container .swiper-wrapper .swiper-slide .title {
+  font-size: 2.4rem;
+  margin-top: 1rem;
+  text-align: center;
 }
 body .new-activity .activity-picture .activity-picture-list {
   display: flex;
