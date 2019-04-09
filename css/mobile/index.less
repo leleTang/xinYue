@@ -28,10 +28,7 @@ body {
             background: @white;
             padding: 2rem 3rem;
             li {
-                margin-left: 6.66rem;
-                &:nth-child(1) {
-                    margin-left: 0;
-                }
+                flex: 1;
                 .img-frame {
                     width: 6.66rem;
                     height: 6.66rem;
@@ -48,6 +45,7 @@ body {
                 .title {
                     font-size: 2rem;
                     margin-top: 1rem;
+                    text-align: center;
                 }
             }
         }
@@ -80,6 +78,7 @@ body {
             .activity-picture-list {
                 display: flex;
                 li {
+                    flex: 1;
                     &:nth-child(2n) {
                         margin-left: 2.91rem;
                     }

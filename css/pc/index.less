@@ -1,14 +1,10 @@
 // Transforms
 .transform(@args) {
     transform: @args;
-    -webkit-transform: @args;
-    /* Safari和Chrome */
-    -ms-transform: @args;
-    /* IE 9 */
-    -moz-transform: @args;
-    /* Firefox 旋转属性，参数表示角度(deg表示角度)，负数逆时针，正数顺时针 */
-    -o-transform: @args;
-    /* Opera */
+    -webkit-transform: @args; /* Safari和Chrome */
+    -ms-transform: @args;  /* IE 9 */
+    -moz-transform: @args; /* Firefox 旋转属性，参数表示角度(deg表示角度)，负数逆时针，正数顺时针 */
+    -o-transform: @args;   /* Opera */
 }
 
 //flex-end
@@ -119,9 +115,6 @@
         }
         .content-frame {
             .content {
-                position: absolute;
-                z-index: -1;
-                top: -23px;
                 .person {
                     animation: fadeInDown 1.5s .4s ease both;
                 }
@@ -135,7 +128,7 @@
                             .mark {
                                 display: block;
                                 animation: jiggle 2s ease-in infinite;
-                                display: flex\0;
+                                .flex
                                 /* ie9 */
                             }
                         }
@@ -191,39 +184,23 @@
                             margin-right: 0;
                         }
                         .discount-describe {
-                            background: #1b1f45;
-                            position: relative;
                             img {
-                                width: 147px;
-                                height: 194px;
                                 -webkit-transition: transform .5s;
                                 transition: transform .5s;
                                 -webkit-transform: scale(1);
                                 transform: scale(1);
                             }
                             .describe {
-                                position: absolute;
-                                left: 0;
-                                right: 0;
                                 bottom: 10px;
-                                text-align: center;
-                                font-size: 12px;
-                                color: @white;
-                                line-height: 18px;
                                 li {
                                     clear: both;
-                                    &.now-price {
-                                        color: @golden-yellow;
-                                    }
+                                    &.now-price {}
                                 }
                             }
                         }
-                        .buy-btn {
-                            
-                        }
+                        .buy-btn {}
                         &:hover,
                         {
-                            cursor: pointer;
                             transform: translateY(-3%);
                             .discount-describe {
                                 img {
@@ -232,24 +209,18 @@
                                 }
                             }
                             .buy-btn {
-                                border-color: @golden-yellow;
-                                .right-now {
-                                    background-image: url(../../img/right-now-choose.png);
-                                }
-                                .title {
-                                    color: @golden-yellow;
-                                }
+                                .right-now {}
+                                .title {}
                             }
                         }
                     }
                 }
             }
-            .hr {
-            }
+            .hr {}
         }
     }
     .footer {
-//      margin-top: 86px;
+        //      margin-top: 86px;
         .bg-footer {
             height: 654px;
         }
@@ -260,7 +231,6 @@
                     .number {
                         border-radius: 50%;
                         padding: 2px 7px;
-                        margin-right: 1px;
                         margin-right: 5px;
                     }
                     .see {}
@@ -268,53 +238,29 @@
             }
         }
         .bottom-msg {
-           
             .href-list {
-              
                 li {
-                   
-                    a {
-                        
-                    }
+                    a {}
                 }
             }
-            .copy-right-EN {
-                
-            }
-            .copy-right-CN {
-                
-            }
+            .copy-right-EN {}
+            .copy-right-CN {}
         }
     }
     .floater {
-        position: fixed;
         right: 80px;
-        z-index: 999;
         top: 195px;
         .top {
-            position: relative;
-            text-align: center;
-            width: 56px;
-            margin: 0 auto;
+            
             .title {
-                display: block;
-                line-height: 40px;
-                position: absolute;
-                bottom: -3px;
-                right: 15px;
-                font-size: 13px;
-                font-weight: bold;
-                color: #08060d;
+                
             }
             .top-icon {
-                background: url(../../img/top.png);
-                width: 56px;
-                height: 40px;
+                
             }
             &:hover {
                 cursor: pointer;
                 .top-icon {
-                    background: url(../../img/top-cursor.png);
                 }
             }
         }
@@ -327,10 +273,8 @@
                 }
                 &:hover,
                 &.active {
-                    cursor: pointer;
-                    border-color: #ffe400;
                     img {
-                        filter: alpha(opacity=100);
+                        opacity:1;
                     }
                 }
             }
@@ -351,34 +295,6 @@
                 }
             }
         }
-    }
-    .bg-circulation {
-        &.bg02 {
-//          margin-top: 26px;
-        }
-        &.bg03 {
-//          margin-top: 56px;
-//          -webkit-margin-top: 58px;
-            /* Safari和Chrome */
-//          -ms-margin-top: 56px;
-            /* IE 9 */
-//          -moz-margin-top: 56px;
-            /* Firefox 旋转属性，参数表示角度(deg表示角度)，负数逆时针，正数顺时针 */
-//          -o-margin-top: 56px;
-            /* Opera */
-        }
-    }
-    .clean {
-        clear: both;
-    }
-    .text-left {
-        text-align: left;
-    }
-    .text-right {
-        text-align: right;
-    }
-    .mark {
-        color: #ffea00;
     }
 }
 
@@ -420,34 +336,19 @@
 @keyframes icon-bounce {
     0%,
     100% {
-        -moz-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
+        .transform(rotate(0deg))
     }
     25% {
-        -moz-transform: rotate(15deg);
-        -ms-transform: rotate(15deg);
-        -webkit-transform: rotate(15deg);
-        transform: rotate(15deg);
+        .transform(rotate(15deg))
     }
     50% {
-        -moz-transform: rotate(-15deg);
-        -ms-transform: rotate(-15deg);
-        -webkit-transform: rotate(-15deg);
-        transform: rotate(-15deg);
+        .transform(rotate(-15deg))
     }
     75% {
-        -moz-transform: rotate(5deg);
-        -ms-transform: rotate(5deg);
-        -webkit-transform: rotate(5deg);
-        transform: rotate(5deg);
+        .transform(rotate(5deg))
     }
     85% {
-        -moz-transform: rotate(-5deg);
-        -ms-transform: rotate(-5deg);
-        -webkit-transform: rotate(-5deg);
-        transform: rotate(-5deg);
+        .transform(rotate(-5deg))
     }
 }
 

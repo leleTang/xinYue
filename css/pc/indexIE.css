@@ -316,7 +316,7 @@ body {
   cursor: pointer;
 }
 .floater .top:hover .top-icon {
-  background: url(../img/top-cursor.png);
+  background: url(../../img/top-cursor.png);
 }
 .floater .hero-list {
   clear: both;
@@ -347,6 +347,8 @@ body {
   position: absolute;
   z-index: -1;
   height: 454px;
+  *height: 455px;
+  height: 455px\9;
   min-width: 1024px;
 }
 .clean {
